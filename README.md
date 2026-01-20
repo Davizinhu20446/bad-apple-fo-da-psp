@@ -13,6 +13,14 @@ Just **pure PSP homebrew suffering**.
 
 ---
 
+## ⚠️ If you are going to manually build it
+
+Please note that the file ```audio.mp3``` in the ```/sources/``` folder is in a format that the PSP doesn't like on purporse. Since the wave file itself is too _thicc_ to get into the repo, you gotta manually convert the mp3 into wav. Get your hands on ffmpeg and run this command on Windows PowerShell:
+
+```ffmpeg -i audio.mp3 -acodec pcm_s16le -ar 44100 -ac 2 audio.wav```
+
+Then you are good to go!
+
 ## 🎥 What is this?
 
 This project plays **Bad Apple!!** on the PSP by:
